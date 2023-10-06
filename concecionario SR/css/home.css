@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: azure;
+}
+
+html {
+    height: 100%;
+    /* De esta manera se utiliza el 100% del espacio de pagina */
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    overflow-x: hidden;
+    background-color: rgb(93, 93, 93);
+    /* se usa para que utilice el 100% de la pagina */
+}
+
+a {
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+.grid-container>* {
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    gap: 10px;
+}
+
+.img-logo {
+    width: 102px;
+    height: 100px;
+}
+
+.hd-mn {
+    background: url(../multimedias/carro-pro.mp4);
+}
+
+.hd-mn video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.navbar a {
+    margin: 2vh 6vw;
+}
+
+.btns-home {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: -moz-grid-group;
+    margin: 0 12vw 5vw 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.text {
+    width: 45vw;
+    height: 40vh;
+    padding: 3vw;
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+    font-style: oblique;
+    background-color: #0000008f;
+}
+
+.text p {
+    margin-top: 20px;
+}
+
+.sl-marcas {
+    display: flexbox;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    margin: 0 13vw;
+    width: 100%;
+}
+
+.lista-marcas a {
+    display: flex;
+}
+
+.lista-marcas {
+    list-style: none;
+    display: flex;
+    /* flex para alinear verticalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    margin: 0 7vw;
+    justify-content: center;
+}
+
+.marcas-dv {
+    width: auto;
+    height: 10px;
+    justify-content: center;
+}
+
+.marcas-dv img {
+    width: 100px;
+    padding: 10px;
+}
+
+.lista-marcas div {
+    margin: 0 2vw;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    /* Centrar verticalmente el contenido de cada elemento */
+}
+
+#chevrolet {
+    width: 100%;
+}
+
+#audi {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* botones */
+.btns-marcas {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.lk-marcas button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+}
+
+.lk-dv {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    margin: 0vh 10px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+/* Se perfecciona el centrado de los botones */
+
+.lk-marcas button:hover {
+    background-color: rgb(55, 61, 95);
+    color: rgb(255, 255, 255);
+}
+
+/*Estilo del footer*/
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background: linear-gradient(rgba(134, 126, 126, -1), #000000);
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(134, 126, 126, 0.721);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(151, 25, 25);
+    padding-left: 6px;
+}
+
+.social-links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), alpha);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFF;
+    transition: all .5s ease;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+.social-img {
+    justify-content: center;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width:768px) {
+
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+}
+
+/* Si la pantalla es menor o igual a 480px, cambiar el número de columnas a uno, reducir el tamaño del logo y cambiar la orientación de la barra de navegación a vertical */
+@media screen and (max-width:480px) {
+
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+}

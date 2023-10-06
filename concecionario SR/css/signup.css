@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: url(/images/bg_bmw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* Campos de entrada de ancho completo */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    color: black;
+}
+
+/* Añadir un efecto de foco a los campos de entrada */
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* El separador horizontal */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Establecer un estilo para todos los botones */
+button {
+    background-color: #2a7798;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Estilos adicionales para el botón cancelar */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Flotar botones cancelar y registrarse y añadir un ancho igual */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Añadir relleno a los elementos del contenedor */
+.container {
+    padding: 16px;
+}
+
+/* Limpiar flotadores */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Cambiar estilos para el botón cancelar y el botón registrarse en pantallas extra pequeñas */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+/* El elemento que tiene el fondo borroso */
+.blurry {
+    /* Establecer un color de fondo con transparencia */
+    background-color: transparent;
+    width: 50vw;
+    /* Aplicar un efecto de desenfoque al área detrás del elemento */
+    backdrop-filter: blur(10px);
+    /* Añadir un poco de relleno y margen */
+    padding: 20px;
+    margin: 20px;
+}
+
+#datos_mal{
+    color: #f44336;
+}

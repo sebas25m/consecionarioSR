@@ -1,0 +1,214 @@
+body {
+  background-color: #0066cc;
+  margin: 0;
+  /* Eliminar el margen predeterminado del body */
+}
+
+.all-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* Colocar elementos uno encima del otro */
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 5vh;
+  height: auto;
+  /* Mantener la proporción de aspecto */
+}
+
+.container-imgs {
+  width: 100%;
+  display: flex;
+  /* Cambiado a flex para alinear elementos internos horizontalmente */
+  justify-content: space-between;
+  margin-top: 20vh;
+  /* Espacio entre el logo y la imagen del carro */
+}
+
+.contain-logo,
+.contain-car {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* Colocar elementos uno encima del otro */
+  justify-content: center;
+  align-items: center;
+}
+
+.contain-logo img {
+  width: 20vh;
+  height: auto;
+  /* Mantener la proporción de aspecto */
+}
+
+.contain-car img {
+  width: 50vw;
+  height: 50vh;
+}
+
+#nombre-BMW {
+  margin: 0;
+}
+
+.img-opcion {
+  width: 100%;
+}
+
+.ficha-tecnica {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permitir que los elementos se envuelvan en líneas */
+  justify-content: space-between;
+  /* Espacio uniforme entre los elementos hijos */
+  align-items: stretch;
+  /* Centrar verticalmente los elementos hijos */
+  background-color: aliceblue;
+  width: 100%;
+  color: black;
+  padding: 100px;
+  /* Añade espacio entre la ficha técnica y las imágenes */
+}
+
+.potencia ul li,
+.manejo ul li,
+.Confort ul li,
+h2 {
+  color: black !important;
+  display: block;
+  list-style: disc;
+  padding: 1vh;
+  margin: 0;
+}
+
+.potencia,
+.manejo,
+.Confort {
+  padding: 100vh;
+}
+
+.ficha-tecnica > article,
+.ficha-tecnica > aside {
+  flex: 1;
+  /* Distribuir el espacio disponible de manera uniforme entre los elementos hijos */
+  padding: 10px;
+  /* Añadir espacio entre los elementos hijos */
+  border: 1px solid #ccc;
+  /* Opcional: agregar bordes para separar visualmente los elementos */
+  margin-right: 10px;
+  /* Espacio entre los elementos (ajustar según sea necesario) */
+  width: 100%;
+}
+
+/* Estilos para centrar el título verticalmente y ajustar el espacio */
+.titulo-ficha {
+  width: 100%;
+  /* Asegurarse de que el título ocupe todo el ancho */
+  text-align: center;
+  /* Centrar el texto horizontalmente */
+  margin-bottom: 20px;
+  /* Ajusta el espacio entre el título y las secciones */
+}
+
+.ficha-tecnica h2 {
+  text-align: center;
+}
+
+.potencia > .carac-motor {
+  list-style: disc;
+  text-align: right !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilo del carrusel */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.carrusel {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; /* Necesario para el posicionamiento absoluto */
+}
+
+.botones {
+  position: absolute;
+  top: 50%; /* Posicionar desde la mitad superior de la imagen */
+  left: 50%; /* Posicionar desde la mitad izquierda de la imagen */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centrar tanto horizontal como verticalmente */
+  text-align: center; /* Alinear el texto en el centro */
+}
+
+.precio-especial {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: #3333337e;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.button {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 460px) {
+  .content_slider h2 {
+    font-size: 15pt !important;
+  }
+  .content_slider p {
+    font-size: 12pt !important;
+  }
+  #container-slider .arrowPrev,
+  #container-slider .arrowNext {
+    font-size: 20pt;
+  }
+  #container-slider .arrowPrev {
+    left: 15px;
+  }
+  #container-slider .arrowNext {
+    right: 15px !important;
+  }
+  #slider {
+    height: 400px;
+    min-height: 400px;
+  }
+  #slider li .content_slider {
+    padding: 10px 35px;
+  }
+  .btnSlider {
+    padding: 10px 30px;
+    font-size: 10pt;
+  }
+}

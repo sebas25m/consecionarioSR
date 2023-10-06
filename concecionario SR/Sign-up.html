@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/LOGO SR.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>Sign up | Consecionario SR</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./Log-in.html"><button type="menu" class="btns-home">Log-in</button></a>
+            <a href="./index.html"><img src="./images/LOGO SR.png" alt="logo SR" class="img-logo"></a>
+            <a href="./Sign-up.html"><button type="menu" class="btns-home">Sign up</button></a>
+        </nav>
+    </header>
+    <!-- El modal (contiene el formulario de registro) -->
+    <div id="id01" class="modal">
+        <main class="blurry">
+            <form class="modal-content">
+                <div class="container">
+                    <h1>Registrarse</h1>
+                    <p>Por favor, rellena este formulario para crear una cuenta.</p>
+                    <p id="datos_mal"></p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Escribe tu email" name="email" id="email">
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Crea una contraseña" name="psw" id="password">
+
+                    <label for="psw-repeat"><b>Confirmar contraseña</b></label>
+                    <input type="password" placeholder="Confirma tu contraseña" name="psw-repeat"
+                        id="confirm_contraseña">
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recordarme
+                    </label>
+
+                    <p>Al crear una cuenta, aceptas nuestros <a href="#" style="color:dodgerblue">Términos y
+                            Privacidad</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancelar</button>
+                        <button type="submit" class="signupbtn" onclick="crear_cuenta()">Registrarse</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+    </form>
+    <script src="./js/sign-up.js"></script>
+</body>
+
+</html>

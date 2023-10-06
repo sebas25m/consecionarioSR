@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #999;
+}
+
+a {
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+.grid-container>* {
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    gap: 10px;
+}
+
+.img-logo {
+    width: 102px;
+    height: 100px;
+}
+
+header {
+    background-color: #9999;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+}
+
+.car h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+.car p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+.buy-button {
+    display: block;
+    background-color: #999;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: #434648;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 40px);
+    /* 33.33% para tres elementos en una fila y 40px de espacio entre ellos */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .car {
+        width: calc(50% - 40px);
+        /* 50% para dos elementos en una fila y 40px de espacio entre ellos */
+    }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .car {
+        width: 100%;
+        /* 100% para un elemento en una fila sin espacio entre ellos */
+    }
+}

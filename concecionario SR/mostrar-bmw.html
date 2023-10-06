@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información modelo BMW | Consecionario SR</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/bmw-carros.css">
+    <link rel="shortcut icon" type="image/ico" href="./images/LOGO SR.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./Log-in.html"><button type="menu" class="btns-home">Log-in</button></a>
+            <a href="./index.html"><img src="./images/LOGO SR.png" alt="logo SR" class="img-logo"></a>
+            <a href="./Sign-up.html"><button type="menu" class="btns-home">Sign up</button></a>
+        </nav>
+    </header>
+    <!-- Dentro de todos los comentarios de cada lista es porque ahi se agrega el contenido desde JS asi que no lo cambie porque me daña el JS -->
+    <!-- Aqui se escribira todo el html según el carro que eliga el usuario -->
+    <main class="all-container">
+        <section class="container-imgs">
+            <article class="contain-logo"><img src="./images/bmw.png" alt="logo de BMW" class="logo"></article>
+            <aside class="contain-car">
+                <h1 id="nombre-BMW"></h1>
+                <img src="" alt="Auto BMW" class="img-opcion" id="imagenBMW">
+            </aside>
+        </section>
+        <section class="ficha-tecnica">
+            <h2 class="titulo-ficha ">Ficha tecnica</h2>
+            <article class="potencia">
+                <h2>Motor</h2>
+                <ul id="carac-motor">
+                    <!-- Contenido de Motor -->
+                </ul>
+                <br>
+                <h2>Transmisión</h2>
+                <ul id="carac-transm">
+                    <!-- Atributos de la transmisión -->
+                </ul>
+            </article>
+            <article class="manejo">
+                <h2>Suspensión</h2>
+                <ul id="carac-suspension">
+                    <!-- Contenido de Suspensión -->
+                </ul>
+                <h2>Dirección</h2>
+                <ul id="carac-direct">
+                    <!-- Contenido de Dirección -->
+                </ul>
+                <h2>Frenos</h2>
+                <ul id="carac-freno">
+                    <!-- Contenido de Frenos -->
+                </ul>
+            </article>
+            <aside class="Confort">
+                <h2>Dimensiones y peso</h2>
+                <ul id="carac-dimension">
+                    <!-- Contenido de Dimensiones y peso -->
+                </ul>
+                <h2>Performance</h2>
+                <ul id="carac-perfor">
+                    <!-- Contenido de Performance -->
+                </ul>
+            </aside>
+        </section>
+        <section class="garantia">
+            <ul>
+                <!-- Contenido de las garantias para el cliente -->
+            </ul>
+        </section>
+        <div class="carrusel">
+            <img src="" alt="Imagen 1" id="imagenCarrusel" class="imagen">
+            <div class="botones">
+                <h2 class="precio-especial">Precio especial:</h2>
+                <h3 class="precio-especial" id="precio"></h3>
+                <button onclick="cambiar_page()" class="button">Comprar ahora</button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/mostrarBMW.js"></script>
+</body>
+
+</html>

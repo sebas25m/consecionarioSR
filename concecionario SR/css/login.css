@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(..//images/audi.jpeg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.Login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #ffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding:70px, 30px;
+}
+
+.Login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    margin-left: 35%;
+    display: flex;
+    
+}
+
+.Login-box h1 {
+    margin-top : 7vh;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Login-box input [type="text"],
+.Login-box input [type="Contraseña"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.Login-box input [type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Login-box a {
+    text-decoration: none;
+    font-size:  12px;
+    line-height: 20px;
+    color: darkgray
+
+}
+.Login-box a:hover {
+   color: #fff; 
+}
